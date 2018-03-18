@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.2.0/fabric.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+    <link rel='icon' type='image/x-icon' href='images/favicon.ico'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="spectrum.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+  </head>
+  <body>
+   <div>
+      <div id="canvasContainer" class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="toolbox-btn-wrapper">
+        <div class="toolbox-section">
+          <div class="tools selected-drawing select">
+            <img src="images/select.png" alt="selectImage" width="30" height="30">
+          </div>
+          <!-- <div class="cone">
+            <img src="images/cone.png">
+          </div> -->
+          <div class="hockey-goal selected-tool select">
+            <img id="landscape-mode" src="images/hockey-goal.png">
+            <!-- <img id="portrait-mode" src="images/hockey-goal-portrait.png"> -->
+          </div>
+          <div class="puck selected-tool select">
+            <img src="images/puck.png">
+          </div>
+          <div class="tyre selected-tool select">
+            <img src="images/tyre.png">
+          </div>
+          <div class="small-tyre selected-tool select">
+            <img src="images/small-tyre.png">
+          </div>
+          <div class="blue-circle selected-tool select">
+            <img src="images/blue-circle.png">
+          </div>
+          <div class="circle-numbers selected-tool select">
+            <img id="testimg" src="images/circle-numbers.svg">
+          </div>
+          <div class="arrow selected-tool select">
+            <img src="images/arrow.png">
+          </div>
+          <div class="tools selected-drawing" id="freeDrawing">
+            <img src="images/draw.png" alt="draw" width="30" height="30">
+          </div>
+          <div class="tools selected-drawing" id="draw-dashed-line">
+            <img src="images/dashed-line.png" alt="dashed-line" width="30" height="30" >
+          </div>
+          <div class="tools selected-drawing" id="draw-line">
+            <img src="images/line.png" alt="line" width="30" height="30"  >
+          </div>
+          <div class="tools selected-drawing" id="arrowLine">
+            <img src="images/arrow-line.png" alt="line" width="30" height="30">
+          </div>
+          <div class="colorPalette">
+            <input type='text' id="showPaletteOnly"/>
+          </div>
+        </div>
+        <div class="btn-section">
+          <div class="dropdown">
+             <button onclick="setBackgroundImageSelector()" class="dropbtn">Välj spelplan</button>
+          <div id="dropDownList" class="dropdown-content">
+             <a href="#" id="hockey-full">Hockey helplan</a>
+             <a href="#" id="hockey-half">Hockey halvplan</a>
+             <a href="#" id="soccer-full">Footboll helplan</a>
+             <a href="#" id="soccer-half">Footboll halvplan</a>
+          </div>
+          </div>
+          <div>
+              <button class="dropbtn" id="clear-canvas">Rensa allt</button>
+          </div>
+          <div>
+            <button class="dropbtn" type="button" name="button">
+              <a href="#" id="download">Spara</a>
+            </button>
+            <button class="dropbtn" type="button" name="button">
+              <a href="#" id="delete">Ta bort</a>
+            </button>
+         </div>
+     </div>
+  </div>
+</div>
+    <!--build:js js/main.min.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
