@@ -315,7 +315,8 @@ function canvas() {
         var yellow = '#ffb81c',
             green = '#034638',
             blue = '#0638C4',
-            red = '#c8102e'
+            red = '#c8102e',
+            black = '#000000'
 
         $("#showPaletteOnly").spectrum({
           showPaletteOnly: true,
@@ -324,7 +325,7 @@ function canvas() {
             printColor(color);
           },
           palette: [
-            [ yellow, green, blue, red]
+            [ yellow, green, blue, red, black]
           ]
         });
 
